@@ -1,5 +1,5 @@
 
-Welcome to the Chimoney API starter code repository for the Interledger Summit Hackathon. This README will guide you through the different use cases and API steps to help you easily integrate the different Interledger enpoints into your hackathon project.
+Welcome to the Chimoney API starter code template for the Interledger Summit Hackathon. This README will guide you through the different use cases and API steps to help you easily integrate the different Interledger endpoints into your hackathon project.
 
 
 ## 1. Seamless International E-commerce
