@@ -10,7 +10,7 @@ You can find the code for integrating specific use case flows under the `src` fo
 - Users are confused by foreign currencies during checkout, leading to high cart abandonment rates.
 
 **Proposed Solution:**
-Implement a “Pay with Open Payments” option using Interledger-enabled Chimoney APIs for seamless and real-time international payments.
+Implement a “Pay with Open Payments” flow.
 
 ### Flow Using Chimoney Interledger enabled API:
 1. **Sub-account Setup:**
@@ -40,7 +40,7 @@ Implement a “Pay with Open Payments” option using Interledger-enabled Chimon
 - Lack of access to affordable loans for underserved individuals, with rigid repayment schedules and high transaction costs.
 
 **Proposed Solution:**
-Develop a flexible micro-loan platform using Chimoney’s Interledger-enabled API to manage loans with real-time payments and flexible repayment schedules.
+Develop a flexible micro-loan platform  to manage loans with real-time payments and flexible repayment schedules.
 
 ### Flow Using Chimoney Interledger enabled API:
 1. **Sub-account Setup:**
@@ -68,7 +68,7 @@ Develop a flexible micro-loan platform using Chimoney’s Interledger-enabled AP
 - Migrant workers face high fees and delays when sending money back home to their families, with no real-time status tracking of payments.
 
 **Proposed Solution:**
-Build a remittance application using Chimoney’s Interledger-enabled APIs for instant cross-border transfers with transparent fee breakdowns.
+Build a remittance application for instant cross-border transfers with transparent fee breakdowns.
 
 ### Flow Using Chimoney Interledger enabled API:
 1. **User Registration and Wallet Setup:**
@@ -90,7 +90,7 @@ Build a remittance application using Chimoney’s Interledger-enabled APIs for i
 - High fees and lack of transparency in donation use can discourage donors from contributing, especially internationally.
 
 **Proposed Solution:**
-Create a donation platform using Chimoney’s Interledger-enabled APIs for secure and transparent donations, with real-time updates for donors.
+Create a donation platform for secure and transparent donations, with real-time updates for donors.
 
 ### Flow Using Chimoney API:
 1. **User and Organization Wallet Setup:**
