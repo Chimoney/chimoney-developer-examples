@@ -1,5 +1,5 @@
 
-Welcome to the Chimoney API starter code template for the Interledger Summit Hackathon. This README will guide you through the different use cases and API steps to help you easily integrate the different Interledger endpoints into your hackathon project.
+Welcome to the starter code template for the Interledger Summit Hackathon. This README will guide you through the different use cases and API steps to help you easily integrate the different Interledger endpoints into your hackathon project.
 
 You can find the code for integrating specific use case flows under the `src` folder. 
 
