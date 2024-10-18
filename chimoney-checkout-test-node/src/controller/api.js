@@ -6,6 +6,18 @@ const CHIMONEY_API = "https://api-v2-sandbox.chimoney.io/";
 const API_KEY = process.env.API_KEY || "0000";
 
 class ChimoneyControlller {
+  /**
+   * Initiates a payment with the specified details.
+   * 
+   * @param {Object} req - The request object.
+   * @param {Object} req.body - The request body containing payment details.
+   * @param {number} req.body.valueInUSD - The value of the payment in USD.
+   * @param {Object} req.body.meta - Additional metadata for the payment.
+   * @param {string} req.body.payerEmail - The email address of the payer.
+   * @param {string} req.body.redirect_url - The URL to redirect to after payment.
+   * @param {Object} res - The response object.
+   * @returns {Promise<void>} - Returns a JSON response indicating the status of the payment initiation.
+   */
   static async initiatePayment(req, res) {
     try {
       const { valueInUSD, meta, payerEmail, redirect_url } = req.body;
@@ -53,6 +65,15 @@ class ChimoneyControlller {
     }
   }
 
+  /**
+   * Verifies the payment status using the provided payment ID.
+   * 
+   * @param {Object} req - The request object.
+   * @param {Object} req.body - The request body containing the payment ID.
+   * @param {string} req.body.id - The payment ID to verify.
+   * @param {Object} res - The response object.
+   * @returns {Promise<void>} - Returns a JSON response indicating the status of the payment verification.
+   */
   static async verifyPayment(req, res) {
     const { id } = req.body;
 
@@ -86,6 +107,16 @@ class ChimoneyControlller {
     }
   }
 
+  /**
+   * Receives and processes webhooks from Chimoney for different events.
+   * 
+   * @param {Object} req - The request object.
+   * @param {Object} req.body - The request body containing webhook data.
+   * @param {string} req.body.eventType - The type of event triggered.
+   * @param {string} req.body.issueID - The unique identifier for the issue.
+   * @param {Object} res - The response object.
+   * @returns {Promise<void>} - Returns a JSON response indicating the success of the webhook processing.
+   */
   static async recieveWebhook(req, res) {
     try {
 
